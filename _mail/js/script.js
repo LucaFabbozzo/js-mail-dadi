@@ -12,3 +12,31 @@
 // 3. si ma noi cosa vogliamo fare?
 // 4. torniamo a scrivere in italiano
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo “a mano”
+
+
+
+
+let btnSubmit = document.querySelector('[type="submit"]');
+
+const listaUtentiAbilitati = ['ciao'];
+
+const numeroUtenti = 10;
+
+
+btnSubmit = addEventListener('click', function(){  
+  for(let i = 0; i < numeroUtenti; i++) {  
+    let input = document.querySelector('[name="email"]').value;
+    listaUtentiAbilitati.push(input);
+  }
+})
+
+console.log(listaUtentiAbilitati);
+
+
+
+
+
+
+// const name = document.querySelector('.name').value;
+//   document.getElementById('output-name').innerHTML = name;
+//   document.querySelector('.name').value = '';
