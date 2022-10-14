@@ -16,27 +16,43 @@
 
 
 
-let btnSubmit = document.querySelector('[type="submit"]');
+// Chiedi all’utente la sua email,
+// controlla che sia nella lista di chi può accedere,
+// stampa un messaggio appropriato sull’esito del controllo.
 
-const listaUtentiAbilitati = ['ciao'];
+const output = document.getElementById('output')
 
-const numeroUtenti = 10;
+// 1 - Chiedi all’utente la sua email,
+const emailInserita = false;
+
+// 2 - controlla che sia nella lista di chi può accedere,
+
+// 2.a
+const listaEmails = ['gianni@me.com', 'giulio@gmail.com', 'carmelo@gmail.com', 'marco@hotmail.com'];
+
+console.log(listaEmails)
 
 
-btnSubmit = addEventListener('click', function(){  
-  for(let i = 0; i < numeroUtenti; i++) {  
+// 2.b
+ // Controllo
+
+document.querySelector('[type="submit"]').addEventListener('click',function(){  
     let input = document.querySelector('[name="email"]').value;
-    listaUtentiAbilitati.push(input);
-  }
-})
+    if (emailInserita) {
+      listaEmails.push(input);
+      
+// 3 stampa un messaggio appropriato sull’esito del controllo.
+    } else {
+      output.innerHTML = 'Non fai parte di questa mailing list';
+    }
+    
+ });
 
-console.log(listaUtentiAbilitati);
 
 
 
 
 
 
-// const name = document.querySelector('.name').value;
-//   document.getElementById('output-name').innerHTML = name;
-//   document.querySelector('.name').value = '';
+
+
