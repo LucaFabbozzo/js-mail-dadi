@@ -17,11 +17,11 @@ risultatoComputer.innerText = computer;
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 if(giocatore > computer) {
-  output.innerText = 'Hai vinto!'
+  output.innerText = 'Hai vinto!😃'
 } else if(giocatore === computer) {
-  output.innerText = 'Pareggio'
+  output.innerText = 'Pareggio 😐'
 } else {
-  output.innerText = 'Hai perso:('
+  output.innerText = 'Hai perso 😣'
 }
 
 console.log(giocatore);
