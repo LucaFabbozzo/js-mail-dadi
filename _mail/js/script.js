@@ -27,7 +27,7 @@ let isAccountRegistrato = false;
  if(isAccountRegistrato) {
    output.innerText = 'Ciao bentornato! Iniziamo?';
  } else {
-   output.innerText = 'La tua mail non ci risulta, devi prima iscriverti a questo account.';
+   output.innerText = 'La tua mail non è presente nel nostro database, apri il tuo account personale.';
  }
 
    

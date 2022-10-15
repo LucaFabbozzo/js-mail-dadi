@@ -17,7 +17,7 @@ risultatoComputer.innerText = computer;
 // Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 if(giocatore > computer) {
-  output.innerText = 'hai vinto!'
+  output.innerText = 'Hai vinto!'
 } else if(giocatore === computer) {
   output.innerText = 'Pareggio'
 } else {
