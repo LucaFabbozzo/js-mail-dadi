@@ -12,6 +12,8 @@ const computer = Math.floor(Math.random() * 6) + 1;
 
 if(giocatore > computer) {
   console.log('hai vinto tu');
+} else if(giocatore === computer) {
+  console.log('parità');
 } else {
   console.log('mi spiace non hai vinto');
 }

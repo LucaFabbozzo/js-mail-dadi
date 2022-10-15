@@ -1,5 +1,3 @@
-
-
 // Chiedi all’utente la sua email,
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo.
@@ -12,27 +10,28 @@ const emailInserita = prompt('Inserisci la tua mail');
 // 2.a
 const listaEmails = ['gianni@me.com', 'giulio@gmail.com', 'carmelo@gmail.com', 'marco@hotmail.com'];
 
-let accountRegistrato = false;
-listaEmails.push(emailInserita);
- 
+
+let isAccountRegistrato = false;
+
+  listaEmails.push(emailInserita);
 // 2.b
  // Controllo
 
  for(let i = 0; i < listaEmails.length; i++) {
- 
-   if (emailInserita === [i]) {
-     accountRegistrato = true;
+   
+   if (emailInserita === (i + 1)) {
+     isAccountRegistrato = true;
     }
 
-    console.log(accountRegistrato);
+    console.log(isAccountRegistrato);
     
  }
  
 //  messaggio
 
- if(accountRegistrato) {
+ if(isAccountRegistrato) {
   console.log('ciao bentornato')
- } else if (accountRegistrato) {
+ } else if (isAccountRegistrato) {
   console.log('la tua mail non esiste')
  }
 
