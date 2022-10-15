@@ -13,26 +13,26 @@ const emailInserita = prompt('Inserisci la tua mail');
 const listaEmails = ['gianni@me.com', 'giulio@gmail.com', 'carmelo@gmail.com', 'marco@hotmail.com'];
 
 let accountRegistrato = false;
-
 listaEmails.push(emailInserita);
+ 
 // 2.b
  // Controllo
 
-// document.querySelector('[type="submit"]').addEventListener('click',function(){  
-//     let input = document.querySelector('[name="email"]').value;
-
  for(let i = 0; i < listaEmails.length; i++) {
-  // listaEmails.push(emailInserita);
-   if (emailInserita === listaEmails[i]) {
+ 
+   if (emailInserita === [i]) {
      accountRegistrato = true;
     }
 
-    console.log(listaEmails[i]);
+    console.log(accountRegistrato);
+    
  }
+ 
+//  messaggio
 
  if(accountRegistrato) {
   console.log('ciao bentornato')
- } else {
+ } else if (accountRegistrato) {
   console.log('la tua mail non esiste')
  }
 
