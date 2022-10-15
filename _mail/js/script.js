@@ -1,6 +1,7 @@
 // Chiedi all’utente la sua email,
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo.
+const output = document.getElementById('output');
 
 // 1 - Chiedi all’utente la sua email,
  const emailInserita = prompt('Scrivi qui la tua mail');
@@ -24,9 +25,9 @@ let isAccountRegistrato = false;
 //  messaggio
 
  if(isAccountRegistrato) {
-  console.log('ciao bentornato')
+   output.innerText = 'Ciao bentornato!';
  } else {
-  console.log('la tua mail non esiste, iscriviti in questo account')
+   output.innerText = 'La tua mail non ci risulta, devi prima iscriverti a questo account.';
  }
 
    
