@@ -3,7 +3,7 @@
 // stampa un messaggio appropriato sull’esito del controllo.
 
 // 1 - Chiedi all’utente la sua email,
- const emailInserita = 'marco@hotl.com';
+ const emailInserita = prompt('Scrivi qui la tua mail');
 
 // 2 - controlla che sia nella lista di chi può accedere,
 // 2.a
@@ -26,7 +26,7 @@ let isAccountRegistrato = false;
  if(isAccountRegistrato) {
   console.log('ciao bentornato')
  } else {
-  console.log('la tua mail non esiste')
+  console.log('la tua mail non esiste, iscriviti in questo account')
  }
 
    
