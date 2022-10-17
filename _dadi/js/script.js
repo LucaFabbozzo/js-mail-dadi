@@ -14,8 +14,8 @@ const risultatoComputer = document.querySelector('.computer');
 
 input.addEventListener('click', function() {
   
-  const giocatore = Math.floor(Math.random() * 6) + 1;
-  const computer = Math.floor(Math.random() * 6) + 1;
+  const giocatore = Math.ceil(Math.random() * 6);
+  const computer = Math.ceil(Math.random() * 6);
 
   risultatoGiocatore.innerText = giocatore;
   risultatoComputer.innerText = computer;
