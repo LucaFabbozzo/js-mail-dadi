@@ -33,6 +33,10 @@ input {
   cursor: pointer;
 }
 
+input::placeholder {
+  text-align: center;
+}
+
 input:focus {
   color: #797373;
 }
