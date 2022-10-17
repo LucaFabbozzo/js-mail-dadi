@@ -30,6 +30,7 @@ let isAccountRegistrato = false;
 
   reset.addEventListener('click', function() {
     output.innerText = '';
+    window.location.reload();
   })
 
 
